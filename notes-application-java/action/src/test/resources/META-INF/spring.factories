@@ -1,0 +1,2 @@
+org.springframework.test.context.ContextCustomizerFactory=\
+come.wedaa.notes.action.config.SqlTestContainersSpringContextCustomizerFactory

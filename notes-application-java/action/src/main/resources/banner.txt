@@ -1,0 +1,11 @@
+
+
+██╗    ██╗ ${AnsiColor.YELLOW} ██████╗ ${AnsiColor.WHITE}██████╗   ██████╗   ██████╗
+██║    ██║ ${AnsiColor.YELLOW}██╔════╝ ${AnsiColor.WHITE}██╔══██╗ ██╔══ ██║ ██╔══ ██║
+██║ █╗ ██║ ${AnsiColor.YELLOW}███████╗ ${AnsiColor.WHITE}██║  ██║ ████████║ ████████║
+██║███╗██║ ${AnsiColor.YELLOW}██╔════╝ ${AnsiColor.WHITE}██║  ██║ ██╔══ ██║ ██╔══ ██║
+╚███╔███╔╝ ${AnsiColor.YELLOW}███████╗ ${AnsiColor.WHITE}██████╔╝ ██║   ██║ ██║   ██║
+ ╚══╝╚══╝  ${AnsiColor.YELLOW}╚══════╝ ${AnsiColor.WHITE}╚═════╝  ╚═╝   ╚═╝ ╚═╝   ╚═╝
+
+${AnsiColor.BRIGHT_BLUE}:: WeDAA 🤓  :: Running Spring Boot ${spring-boot.version} :: Startup profile(s) ${spring.profiles.active} ::
+:: https://www.wedaa.tech ::${AnsiColor.DEFAULT}

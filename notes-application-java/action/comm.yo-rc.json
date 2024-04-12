@@ -1,0 +1,14 @@
+[
+  {
+    "client": "notification",
+    "server": "action",
+    "type": "async",
+    "framework": "rabbitmq"
+  },
+  {
+    "client": "webapp",
+    "server": "action",
+    "type": "sync",
+    "framework": "rest-api"
+  }
+]

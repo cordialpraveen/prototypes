@@ -1,0 +1,71 @@
+application {
+    config {
+        baseName webapp
+        applicationType gateway
+        packageName ui
+        authenticationType no
+        serverPort 8081
+        databaseType no
+        prodDatabaseType no
+        logManagementType no
+        serviceDiscoveryType no
+        clientFramework react
+        blueprint [react]
+    }
+}
+ application {
+    config {
+        baseName action
+        applicationType microservice
+        packageName come.wedaa.notes.action
+        authenticationType no
+        serverPort 8082
+        databaseType sql
+        devDatabaseType postgresql
+        prodDatabaseType postgresql
+        databasePort 5432
+        logManagementType no
+        serviceDiscoveryType no
+        clientFramework no
+    }
+}
+ application {
+    config {
+        baseName notification
+        applicationType microservice
+        packageName com.wedaa.notes.notification
+        authenticationType no
+        serverPort 8083
+        databaseType sql
+        devDatabaseType postgresql
+        prodDatabaseType postgresql
+        databasePort 5433
+        logManagementType no
+        serviceDiscoveryType no
+        clientFramework no
+    }
+}
+ 
+communication {
+    client "notification"
+    server "action"
+    type "async"
+    framework "rabbitmq"
+}
+
+ 
+communication {
+    client "webapp"
+    server "action"
+    type "sync"
+    framework "rest-api"
+}
+
+ 
+communication {
+    client "webapp"
+    server "notification"
+    type "sync"
+    framework "rest-api"
+}
+

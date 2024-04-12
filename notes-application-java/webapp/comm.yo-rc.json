@@ -1,0 +1,14 @@
+[
+  {
+    "client": "webapp",
+    "server": "action",
+    "type": "sync",
+    "framework": "rest-api"
+  },
+  {
+    "client": "webapp",
+    "server": "notification",
+    "type": "sync",
+    "framework": "rest-api"
+  }
+]

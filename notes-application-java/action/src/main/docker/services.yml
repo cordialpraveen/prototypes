@@ -1,0 +1,11 @@
+# This configuration is intended for development purpose, it's **your** responsibility to harden it for production
+name: action
+services:
+  postgresql:
+    extends:
+      file: ./postgresql.yml
+      service: postgresql
+  rabbitmq:
+    extends:
+      file: ./rabbitmq.yml
+      service: rabbitmq
